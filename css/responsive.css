@@ -1,0 +1,212 @@
+:root{
+    --primary:hsl(0, 0%, 100%);
+    --red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --dark-Desaturated-cyan:hsl(167, 40%, 24%);
+    --dark-blue:hsl(198, 62%, 26%);
+    --dark-moderate-cyan:hsl(168, 34%, 41%);
+    --dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --heading-font:'Fraunces', serif;;
+    --body-font:'Barlow', sans-serif;;
+    --body-font-size:18px;
+    --bold:700;
+    --very-bold:900;
+
+
+}
+
+@media screen and (max-width:990px) {
+    body{
+        width: 100%;
+        /* text-align: center; */
+    }
+    /* h1,h2,h4{
+        font-size: 24px !important;
+    } */
+    /* nav menu */
+    .nav-menu{
+        display: none;
+    }
+
+    .nav-icon{
+        display: initial;
+    }
+    /* hero */
+    .hero h1{
+        font-size:50px !important ;
+    }
+    /* grid */
+    .grid{
+        grid-template-columns: 100%;
+        /* display:flex;
+        flex-direction: column;
+        margin: 0px;
+        flex-direction: ; */
+    }
+
+    .responsive-flex{
+        /* display: flex; */
+        /* flex-direction: column-reverse; */
+    }
+    .flex-reverse{
+        flex-direction: column-reverse !important;
+    }
+    .grid-write-up, .grid-img{
+        width: 100%;
+        text-align: center;
+        /* text-align: center; */
+    }
+    /* .yellow{
+        left: 10.5rem;
+    }
+    .pink{
+        left: 10.5rem;
+    } */
+
+    /* client testimonial*/
+    .client-testimonial{
+        padding: 0;
+    }
+    .testimonial h3{
+        margin-top: 10px;
+    }
+    .client-card{
+        /* grid-template-columns: 100%; */
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    /* grid */
+    .pink{
+        width: 10rem;
+        height: 10px;
+        background-color: var(--red);
+        bottom: 10px;
+        position: relative;
+        margin: auto;
+    }
+    .yellow{
+        width: 10rem;
+        height: 10px;
+        background-color: var(--Yellow);
+        bottom: 10px;
+        position: relative;
+        margin: auto;
+    }
+    
+    .responsive-flex{
+        flex-direction: column;
+    }
+    .grid-write-up-unique{
+        bottom: 10%;
+        left: 25%;
+        right: 25%;
+        text-align: center;
+        width: 50%;
+        height: auto;
+        /* padding: .5rem 6rem; */
+    }
+    .grid-write-up{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: black;
+        background-color: var(--White);
+        position: relative;
+        z-index: 2;
+        padding: 3rem;
+    }
+    .grid-write-up-unique h1{
+        font-size: 24px !important;
+    }
+    .grid-write-up-unique p{
+        font-size: 12px;
+        margin-top: 8px;
+        color: var(--dark-moderate-cyan);
+        font-weight: var(--bold);
+    }
+    .flex-space{
+        margin: 0px !important;
+    }
+
+    .nav-menu{
+        display: initial;
+        width: 22rem;
+        background-color: #fff;
+        position: absolute;
+        height: 23rem;
+        top: 5rem;  
+        right: 5.5%;
+        display: none;
+        transition: 0.5s height 2s;
+        transform: translateY(7%);
+    }
+    .nav-menu.active{
+        display: initial;
+        transition: 0.3 ease-in-out;
+        transform: translateY(7%);
+
+    }
+    .nav-menu::before{
+        content: '';
+        position: absolute;
+        border-bottom:30px solid #fff ;
+        border-left: 30px solid transparent;
+        border-right: 0px solid transparent;
+        right: 0;
+        top:-1.9rem  ;
+        /* transition: ease-in 0.5s; */
+    }
+    
+    .nav-menu ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .nav-menu ul li{
+        margin-top: 20px;
+    }
+
+    .nav-menu ul li:hover{
+        background-color: var(--Yellow);
+        border-radius: 15px;
+        padding: 15px;
+
+    }
+
+    .nav-menu ul li a{
+        color:var(--Grayish-blue) ;
+    }
+
+
+/* footer-img */
+    .footer-img{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media screen and (max-width:411px){
+    .nav-menu{
+        width: 23rem;
+        height: 23rem;
+        right: 5%;
+    }
+    .hero{
+        height: 100vh;
+    }
+    .down-arrow{
+        position: absolute;
+        top: 47%;
+        bottom: 50%;
+        right: 50%;
+        left: 50%;
+    }
+}
